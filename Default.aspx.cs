@@ -9,6 +9,7 @@ namespace Scommesse
 {
     /*
         - creare una homepage che permetta di scegliere il gioco
+            - aggiungere un minimo di stile
         - creare una pagina per ciascun gioco
             - al momento solo "Indovina un numero"     
      */

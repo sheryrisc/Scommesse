@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Scommesse.MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <link href="wwwroot/bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="wwwroot/style/style.css" rel="stylesheet" />
+    <script src="wwwroot/jquery-3.5.1/jquery-3.5.1.js"></script>
+    <script src="wwwroot/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Benvenuto</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Default.aspx">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giochi</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="IndovinaUnNumero.aspx">Indovina un numero</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">...</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">...</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>   
+</body>
+</html>
